@@ -4,11 +4,11 @@ import numpy as np
 
 
 
-# with (open(r"C:\Users\user\4Geeks\Módulos\Módulo25\streamlit\models\tree_model.pkl", "rb")) as openfile:
-#      model = pickle.load(openfile)
-
-with (open(r"..\models\tree_model.pkl", "rb")) as openfile:
+with (open(r"C:\Users\user\4Geeks\Módulos\Módulo25\streamlit\models\tree_model.pkl", "rb")) as openfile:
      model = pickle.load(openfile)
+
+# with (open(r"..\models\tree_model.pkl", "rb")) as openfile:
+#      model = pickle.load(openfile)
 
 diabetes_dict = {
     0:"No",
