@@ -5,8 +5,8 @@ import numpy as np
 
 
 
-with (open(r"C:\Users\user\4Geeks\Módulos\Módulo25\streamlit\models\tree_model.pkl", "rb")) as openfile:
-     model = pickle.load(openfile)
+# with (open(r"C:\Users\user\4Geeks\Módulos\Módulo25\streamlit\models\tree_model.pkl", "rb")) as openfile:
+#      model = pickle.load(openfile)
 
 # with (open(r"..\models\tree_model.pkl", "rb")) as openfile:
 #      model = pickle.load(openfile)
@@ -43,6 +43,8 @@ age = st.number_input(
     'Enter your age')
 
 if st.button("Predecir"):
+    with (open(r"C:\Users\user\4Geeks\Módulos\Módulo25\streamlit\models\tree_model.pkl", "rb")) as openfile:
+     model = pickle.load(openfile)
     row = [
         number_of_pregnancies,
         glucose_value,
